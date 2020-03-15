@@ -1,0 +1,29 @@
+All of my tests are located in main.cpp
+
+Tests I added (4-9):
+
+Test 4: Tests a relation added to the tree with a negative value. This tests utilizes
+a method I created called createRangedRelationForward which is similar to CreateForwardRelation
+except with an adjustable range. I call this and then an integer test I created called
+negativeIntTests() that test values ranging from -3500 to 3500 (the range specified when
+I called createRangedForwardRelation.
+
+Test 5: Tests an empty tree. This test utilizes a method I created called createForwardSizedRelation
+which takes in an integer value to specify the size of the inputs to be added to the tree.
+Then, indexTests is called.
+
+Test 6: Tests a tree with one node. This utilizes createForwardSizedRelation again and calls
+indexTests to test the implementation of my tree.
+
+Test 7: Tests a large amount of integer relations entered forward. This test utilizes
+createForwardSizedRelation again and attempts to input 100,000 values into the tree.
+Then, a method I created called largeIntTests is called which is similar to intTests, just
+with varied index sizes to test.
+
+Test 8: Tests a large amount of integer relations entered randomly. This test utilizes
+createRandomSizedRelation and attempts to input 100,000 values into the tree.
+Then, largeIntTests is called again to test the tree.
+
+Test 9: Tests a large amount of integer relations entered backwards. This test utilizes
+createRandomSizedRelation and attempts to input 100,000 values into the tree.
+Then, largeIntTests is called again to test the tree.
